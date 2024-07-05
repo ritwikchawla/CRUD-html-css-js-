@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <div class="main"><h1>Employee</h1></div>
+        <div class="toggles">
+          <button id="add-btn">Add Employee</button>
+          <button>Clear Filtering</button>
+          <input
+            type="text"
+            placeholder="searchbar"
+            class="Enter employee ID"
+          />
+          <button>Search</button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="table-contents">
+      <table>
+        <tr>
+          <th>Sr. No.</th>
+          <th>Profile</th>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>E-mail</th>
+          <th>Office Code</th>
+          <th>Job Title</th>
+          <th>Actions</th>
+        </tr>
+        <tbody id="table-data"></tbody>
+      </table>
+    </div>
+
+    <div class="model">
+      <div class="left-model">
+        <div class="img-box">
+          <img
+            src="./images/user-solid.svg"
+            alt="user"
+            height="150"
+            width="150"
+            id="profile-pic"
+          />
+          <input type="file" placeholder="Choose File" id="upload-field" />
+        </div>
+      </div>
+      <div class="right-model">
+        <button class="close-btn"><h5>X</h5></button>
+        <div class="input-box">
+          <form id="registerForm">
+            <label for="id">ID</label>
+            <input type="text" id="id" required />
+            <br />
+            <label for="id">First Name</label>
+            <input type="text" id="first-name" required />
+            <br />
+            <label for="id">Last Name</label>
+            <input type="text" id="last-name" required />
+            <br />
+            <label for="id">Email</label>
+            <input type="text" id="email" required />
+            <br />
+            <label for="id">Office Code</label>
+            <input type="text" id="office-code" required />
+            <br />
+            <label for="id">Job Title</label>
+            <input type="text" id="job-title" required />
+            <br />
+            <div class="submit">
+              <button class="register">Register</button>
+              <button id="update-btn" disabled="disabled">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Navbar */
+.main{
+    background-color: black;
+    color: white ;
+    font-size: large;
+    padding: 1%;
+}
+
+.toggles{
+    padding: 1%;
+}
+
+.toggles button{
+    padding: 15px;
+    border-radius: 15px;
+    border-color: white;
+    color: white;
+    background-color: black;
+    margin-right: 50px;
+    
+}
+.searchbar{
+    margin-left: 60%;
+    padding: 11px;
+}
+
+
+/* Table content */
+table{
+    width: 100%;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+
+table th{
+    background-color: lightsteelblue;
+    font-weight:bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+table tr td{
+    font-weight: lighter;
+    font-size:small;
+    text-align: center;
+}
+
+
+
+/* Employee Details*/
+
+.model{
+    width: 50%;
+    position: fixed;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    background-color: #f2f2ff;
+    transform: translate(-50%,-50%);
+    display: flex;
+    border-top: 20px groove #4286f5;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.1s;
+}
+/* For JS */
+.model.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.model .left-model{
+    width:30%;
+    height: 100%;
+    background-color: #f2f2ff;
+    display: flex;
+}
+
+.model .left-model .img-box{
+    height: 300px;
+    width: 100%;
+    background-color: #f2f2ff;
+}
+
+.model .left-model .img-box img{
+    padding: 10% 30%;
+}
+
+.model .left-model .img-box input{
+    padding: 0 30%;
+}
+
+.model .right-model{
+    width: 70%;
+    height: 100%;
+    border-left: 5px groove #4286f5;
+    
+}
+.model .right-model .close-btn{
+    border-radius: 40%;
+    border: none;
+    background-color: red;
+    position: absolute;
+    right: -5px;
+    top:-30px;
+    padding: 8px;
+}
+
+.model .right-model .input-box{
+    justify-content: space-between;
+    text-align: center;
+    font-size: large;
+}
+
+.model .right-model .input-box input{
+    text-align: left;
+}
+
+#id{
+    margin: 3%;
+}
+
+#first-name{
+    margin: 3%;
+}
+
+#last-name{
+    margin: 3%;
+}
+#email{
+    margin: 3%;
+}
+#office-code{
+    margin: 3%;
+}
+#job-title{
+    margin: 3%;
+}
+
+.model .right-model .input-box .submit button{
+    padding: 15px;
+    border-radius: 15px;
+    border-color: white;
+    color: white;
+    background-color: black;
+    margin-right: 50px;
+}
